@@ -1,0 +1,139 @@
+@import "../abstract/variables";
+
+//color classes 
+.primary-color {background-color: $primary-color; border-color: $primary-color; color: #fff;}
+.secondary-color-1 {background-color: $secondary-color-1; border-color: $secondary-color-1;color: #fff;}
+.secondary-color-2 {background-color: $secondary-color-2; border-color: $secondary-color-2;color: #fff;}
+.secondary-color-3 {background-color: $secondary-color-3; border-color: $secondary-color-3;color: #fff;}
+.primary-text-color {color: $primary-color;}
+.secondary-text-color-1 {color: $secondary-color-1;}
+.secondary-text-color-2 {color: $secondary-color-2;}
+.secondary-text-color-3 {color: $secondary-color-3;}
+.secondary-text-color-4 {color: $secondary-color-4;}
+.background-gradient-1 { @include diagonalGradient($background-gradient-top,$background-gradient-bottom)}
+.text-color { color: $text-color;}
+.second-text-color { color: $second-text-color;}
+.light-text-color { color: $light-text-color;}
+.dark-background-color { background-color:$dark-background-color;}
+.light-background-color { background-color:$light-background-color;}
+.hover-color { color:$hover-color;}
+.disabled-element-color { background-color:$disabled-element-color;color: #fff;}
+.disabled-element-text-color {color: $disabled-element-color;}
+.muted-text-color { color:$mute;}
+.muted-color { background-color:$mute;}
+.alert-color { background-color:$alert-color;}
+.alert-text-color { color:$alert-color;}
+.white-text { color:#fff;}
+.btn-light { background-color: #fff;border-color: #fff;}
+.light-gray-1 { background-color: $light-gray-1;}
+.light-gray-2 { background-color: $light-gray-2;}
+.light-text-gray-2 { color: $light-gray-2;}
+ //hover
+ a:hover {
+	&.text-color {
+		color:darken($color: $text-color, $amount: 15);
+	}
+	&.second-text-color {
+		color:darken($color: $second-text-color, $amount: 15);
+	}
+	&.mute-text-color {
+		color:darken($color: $mute, $amount: 15);
+	}
+	&.alert-text-color {
+		color:darken($color: $alert-color, $amount: 15);
+	}
+	&.white-text {
+		color:darken($color: $white, $amount: 15);
+	}
+	&.primary-text-color {
+		color:darken($color: $primary-color, $amount: 15);
+	}
+	&.secondary-text-color-1 {
+		color: darken($color: $secondary-color-1, $amount: 15);
+	}
+	&.secondary-text-color-2 {
+		color: darken($color: $secondary-color-2, $amount: 15);
+	}
+	&.secondary-text-color-3 {
+		color:darken($color: $secondary-color-3, $amount: 15);
+	}
+	&.light-text-color {
+		color:darken($color: $light-text-color, $amount: 15);
+	}
+ }
+
+.btn:hover {
+	&.primary-color {
+		background-color: darken($color: $primary-color, $amount: 10);
+		border-color: darken($color: $primary-color, $amount: 15);
+		color:#fff;
+	}
+	&.secondary-color-1 {
+		background-color: darken($color: $secondary-color-1, $amount: 10);
+		border-color: darken($color: $secondary-color-1, $amount: 15);
+		color:#fff;
+	}
+	&.secondary-color-2 {
+		background-color: darken($color: $secondary-color-2, $amount: 10);
+		border-color: darken($color: $secondary-color-2, $amount: 15);
+		color:#fff;
+	}
+	&.secondary-color-3 {
+		background-color: darken($color: $secondary-color-3, $amount: 10);
+		border-color: darken($color: $secondary-color-3, $amount: 15);
+		color:#fff;
+	}
+	&.light-gray-1 {
+		background-color: darken($color: $light-gray-1, $amount: 10);
+		border-color: darken($color: $light-gray-1, $amount: 15);
+		color:#fff;
+	}
+	&.light-gray-2 {
+		background-color: darken($color: $light-gray-2, $amount: 10);
+		border-color: darken($color: $light-gray-2, $amount: 15);
+		color:#fff;
+	}
+	.primary-text-color {
+		color:#fff;
+	}
+}
+.btn-outline,.btn-light,.outline {
+	&.primary-color {
+		color:$primary-color;
+	}
+	&.secondary-color-1 {
+		color: $secondary-color-1;
+	}
+	&.secondary-color-2 {
+		color: $secondary-color-2;
+	}
+	&.secondary-color-3 {
+		color: $secondary-color-3;
+	}
+	&.light-gray-1 {
+		color: $light-gray-1;
+	}
+	&.light-gray-2 {
+		color: $light-gray-2;
+	}
+	
+}
+.btn-outline:hover {
+	&.light-gray-1,&.light-gray-2 {
+		i,span {
+			color: $text-color;
+		}
+	}
+	&.light-text-color {
+		background-color: $light-text-color;
+		color: $primary-color;
+		border-color: $light-text-color;
+	}
+}
+//effects
+.light-drop-shadow {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.accentued-drop-shadow {
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}

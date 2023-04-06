@@ -1,0 +1,132 @@
+@import "../abstract/variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap');
+.h1 {
+  margin-bottom: 0!important;
+  line-height: 1.2!important;
+}
+.h2, .h3, .h4, .h5, .h6, .p,h2,h3,h4,h5,h6,p {
+  margin-bottom: 0!important;
+}
+.h4, .h5, .h6, .p {
+  margin-bottom: 0!important;
+}
+a {
+  display: inline-block;
+}
+/*font-size*/
+.h0 {
+  @include font-size($h0-font-sizes);
+  font-weight: 800;
+}
+.h1 {
+  @include font-size($h1-font-sizes);
+  font-weight: 800;
+}
+.h2 {
+  @include font-size($h2-font-sizes);
+  font-weight: 800;
+}
+.h3-plus {
+  @include font-size($h3-plus-font-sizes);
+  font-weight: 800;
+}
+.h3 {
+  @include font-size($h3-font-sizes);
+  font-weight: 700;
+}
+.h4 {
+  @include font-size($h4-font-sizes);
+  font-weight: 300;
+}
+.h5 {
+  @include font-size($h5-font-sizes);
+  font-weight: 700;
+}
+.h6 {
+  @include font-size($h6-font-sizes);
+  font-weight: 500;
+}
+.paragr {
+  @include font-size($paragraph-font-sizes);
+  font-weight: 300;
+}
+.nav-link {
+  @include font-size($nav);
+  font-weight: 500;
+}
+.navbar-brand {
+  @include font-size($h3-font-sizes);
+  font-weight: 700;
+}
+.btn, .btn-text {
+  @include font-size($button-font-sizes);
+  font-weight: 500;
+}
+.btn-sm {
+  @include font-size($button-small-font-sizes);
+  font-weight: 400;
+}
+.btn-md {
+  @include font-size($button-medium-font-sizes);
+  font-weight: 500;
+}
+.btn-lg {
+  @include font-size($button-large-font-sizes);
+  font-weight: 700;
+}
+.svg-icn {
+	width: 1em;
+    height: 1em;
+    pointer-events: none;
+	vertical-align: middle;
+	//margin-top: -4px;
+}
+.bi  {
+  line-height: 0!important;
+}
+
+.icn-xs {
+  font-weight: 400;
+  width: 16px!important;
+  height: 16px!important;
+  font-size: 16px;
+}
+.icn-sm {
+  font-weight: 400;
+  width: 24px!important;
+  height: 24px!important;
+  font-size: 24px;
+}
+.icn-md {
+  font-weight: 500;
+  width: 32px!important;
+  height: 32px!important;
+  font-size: 32px;
+}
+.icn-lg {
+  font-weight: 700;
+  width: 48px!important;
+  height: 48px!important;
+  font-size: 48px;
+}
+.icn-xl { 
+  font-weight: 700;
+  width: 72px!important;
+  height: 72px!important;
+  font-size: 72px;
+}
+.list {
+  @include font-size($list);
+  font-weight: 300;
+}
+.link {
+  @include font-size($link);
+  font-weight: 500;
+}
+.graphic {
+	i {@include font-size($graphic-icon-font-sizes);}
+}
+.graphic.icn-circle {
+	strong {@include font-size($graphic-text-font-sizes);}
+	i {@include font-size($graphic-icon-circle-font-sizes);}
+}

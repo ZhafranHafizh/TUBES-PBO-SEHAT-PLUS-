@@ -1,0 +1,40 @@
+@import "../abstract/variables.scss";
+.card-item {
+    border: 1px solid #eee;
+    position: relative;
+}
+.card-item.noborder{
+    border: none;
+}
+.card-item.cover,.card.cover {
+    .media.bg-cover {
+        height: inherit;
+        -webkit-filter: brightness(1);
+        filter: brightness(1);
+        .filter {
+            height: 100%;
+            background: rgb(0,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.747) 86%);
+        }
+    }
+    .card-content {
+        position: relative;
+        z-index: 10;
+    }
+}
+.card-item.full-width {
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { 
+        .media {
+            width: 60%;
+            height: 250px;
+        }
+     }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { 
+        .media {
+            width: 40%;
+        }
+    }
+}
