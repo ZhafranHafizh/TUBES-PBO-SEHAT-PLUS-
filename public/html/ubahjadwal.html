@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/ubahjadwal.css">
+  <title>Ubah Jadwal Pertemuan dengan Dokter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Ubah Jadwal Pertemuan dengan Dokter</h1>
+    <form id="appointment-form">
+      <div class="form-group">
+        <label for="doctor-name">Kode Pertemuan Sebelumnya:</label>
+        <input type="text" id="doctor-name" name="doctor-name" required>
+      </div>
+      <div class="form-group">
+        <label for="appointment-date">Tanggal Pertemuan:</label>
+        <input type="date" id="appointment-date" name="appointment-date" required>
+      </div>
+      <div class="form-group">
+        <label for="appointment-time">Waktu Pertemuan:</label>
+        <input type="time" id="appointment-time" name="appointment-time" required>
+      </div>
+      <div class="form-group">
+        <label for="reason">Alasan:</label>
+        <textarea id="reason" name="reason" required></textarea>
+      </div>
+      <div class="button-group">
+        <button type="button" class="back-button" onclick="goBack()">Back</button>
+        <button type="submit">Ubah Jadwal</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
