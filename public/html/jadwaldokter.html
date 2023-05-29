@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penjadwalan Dokter</title>
+  <link rel="stylesheet" type="text/css" href="../css/jadwaldokter.css">
+</head>
+<body>
+  <h1>Penjadwalan Dokter</h1>
+  
+  <table id="jadwalTable">
+    <tr>
+      <th>Tanggal</th>
+      <th>Jam Mulai</th>
+      <th>Jam Selesai</th>
+      <th>Nama Dokter</th>
+      <th>Available</th>
+      <th>Aksi</th>
+    </tr>
+    <tr>
+      <td><input type="date" class="tanggal"></td>
+      <td><input type="time" class="jamMulai"></td>
+      <td><input type="time" class="jamSelesai"></td>
+      <td>
+        <select class="namaDokter">
+          <option value="Dr. John Doe">Dr. John Doe</option>
+          <option value="Dr. Jane Smith">Dr. Jane Smith</option>
+          <option value="Dr. Michael Johnson">Dr. Michael Johnson</option>
+        </select>
+      </td>
+      <td><input type="checkbox"></td>
+      <td><button onclick="hapusJadwal(this)">Hapus</button></td>
+    </tr>
+  </table>
+
+  <button onclick="tambahJadwal()">Tambah Jadwal Baru</button>
+  <button onclick="konfirmasiPenjadwalan()">Konfirmasi Penjadwalan</button>
+
+  <script src="../js/addjadwal.js"></script>
+</body>
+</html>
