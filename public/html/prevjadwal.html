@@ -32,9 +32,15 @@
     <div class="buttons">
       <button id="ubahJadwalBtn">Ubah Jadwal Pertemuan</button>
       <button id="batalkanJadwalBtn">Batalkan Pertemuan</button>
+      <button onclick="goBack()">Back</button> <!-- Tombol "Back" -->
     </div>
   </div>
 
   <script src="../js/prevjadwal.js"></script>
+  <script>
+    function goBack() {
+      window.history.back(); // Fungsi untuk kembali ke halaman sebelumnya
+    }
+  </script>
 </body>
 </html>

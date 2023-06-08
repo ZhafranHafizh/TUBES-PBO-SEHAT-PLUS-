@@ -34,3 +34,15 @@ tomorrowDate4.innerHTML = formatter.format(tomorrow4);
 tomorrowDate5.innerHTML = formatter.format(tomorrow5);
 tomorrowDate6.innerHTML = formatter.format(tomorrow6);
 tomorrowDate7.innerHTML = formatter.format(tomorrow7);
+
+
+function previewJadwal() {
+    // Menambahkan class fade-out ke table-container
+    document.querySelector('.table-container').classList.add('fade-out');
+  
+    // Mengatur timeout untuk memastikan animasi transisi selesai
+    setTimeout(function() {
+      // Mengarahkan pengguna ke halaman preview jadwal
+      window.location.href = "preview_jadwal.html";
+    }, 500); // Waktu transisi dalam milidetik (0.5 detik)
+  }
