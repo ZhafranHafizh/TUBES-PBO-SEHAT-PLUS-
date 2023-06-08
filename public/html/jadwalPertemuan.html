@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penjadwalan Pertemuan dengan Dokter</title>
+  <link rel="stylesheet" type="text/css" href="../css/jadwalPertemuan.css">
+</head>
+<body>
+  <h1>Penjadwalan Pertemuan dengan Dokter</h1>
+  <h3>Pilih Departemen</h3>
+  <select>
+    <option value="opsi1">Departemen 1</option>
+    <option value="opsi2">Departemen 2</option>
+    <option value="opsi3">Departemen 3</option>
+    <option value="opsi4">Departemen 4</option>
+  </select>
+  <div class="table-container">
+  <table id="jadwalTable">
+    <thead>
+      <tr>
+        <th>Hari dan Tanggal</th>
+        <th>Nama Dokter</th>
+        <th>Jam Kerja</th>
+        <th>Pilih</th>
+      </tr>
+    </thead>
+    <tbody> <!-- Hari 1 (Hari ini) -->
+      <tr>
+        <td rowspan="3" id="todayDate"></td>
+        <td>Dokter 1</td>
+        <td>Jam kerja dokter 1</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Dokter 2</td>
+        <td>Jam kerja dokter 2</td>
+        <td><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>Dokter 3</td>
+        <td>Jam kerja dokter 3</td>
+        <td><input type="checkbox"></td>
+      </tr>
+    </tbody>
+    <tbody> <!-- Hari 2 -->
+        <tr>
+          <td rowspan="3" id="tomorrowDate"></td>
+          <td>Dokter 1</td>
+          <td>Jam kerja dokter 1</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 2</td>
+          <td>Jam kerja dokter 2</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 3</td>
+          <td>Jam kerja dokter 3</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+      <tbody> <!-- Hari 3 -->
+        <tr>
+          <td rowspan="3" id="tomorrowDate3"></td>
+          <td>Dokter 1</td>
+          <td>Jam kerja dokter 1</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 2</td>
+          <td>Jam kerja dokter 2</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 3</td>
+          <td>Jam kerja dokter 3</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+      <tbody> <!-- Hari 4 -->
+        <tr>
+          <td rowspan="3" id="tomorrowDate4"></td>
+          <td>Dokter 1</td>
+          <td>Jam kerja dokter 1</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 2</td>
+          <td>Jam kerja dokter 2</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 3</td>
+          <td>Jam kerja dokter 3</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+      <tbody> <!-- Hari 5 -->
+        <tr>
+          <td rowspan="3" id="tomorrowDate5"></td>
+          <td>Dokter 1</td>
+          <td>Jam kerja dokter 1</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 2</td>
+          <td>Jam kerja dokter 2</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 3</td>
+          <td>Jam kerja dokter 3</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+      <tbody> <!-- Hari 6 -->
+        <tr>
+          <td rowspan="3" id="tomorrowDate6"></td>
+          <td>Dokter 1</td>
+          <td>Jam kerja dokter 1</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 2</td>
+          <td>Jam kerja dokter 2</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 3</td>
+          <td>Jam kerja dokter 3</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+      <tbody> <!-- Hari 7 -->
+        <tr>
+          <td rowspan="3" id="tomorrowDate7"></td>
+          <td>Dokter 1</td>
+          <td>Jam kerja dokter 1</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 2</td>
+          <td>Jam kerja dokter 2</td>
+          <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+          <td>Dokter 3</td>
+          <td>Jam kerja dokter 3</td>
+          <td><input type="checkbox"></td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="button-container">
+        <button onclick="tambahJadwal()">Jadwalkan Pertemuan</button>    
+    </div>
+    
+
+  <script src="../js/tujuhHari.js"></script>
+</body>
+</html>
