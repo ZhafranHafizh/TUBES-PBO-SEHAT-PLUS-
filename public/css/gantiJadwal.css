@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .table-container {
+    max-height: 400px; /* Atur ukuran tinggi maksimum container sesuai kebutuhan Anda */
+    overflow-y: auto;
+  }
+  
+  .header {  /* Tombol Back */ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #jadwalTable tbody tr:nth-child(odd) {
+    background-color: white;
+  }
+
+  #jadwalTable tbody tr:nth-child(even) {
+    background-color: lightgray;
+  }
+  
+  /*atur button home */
+  .btn-home {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn-home i {
+    margin-right: 5px;
+  }
+  
+  .btn-home:hover {
+    background-color: #0056b3;
+  }
+
+  /*   */
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #2980b9;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ecf0f1;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  input[type="date"],
+  input[type="time"],
+  select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="date"]:focus,
+  input[type="time"]:focus,
+  select:focus {
+    border-color: #3498db;
+  }
+  
+  button {
+    background-color: #2980b9;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2473a6;
+  }
+  
+  button:active {
+    background-color: #1f618d;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 10vh; /* Mengatur tinggi container agar tombol berada di tengah bawah layar */
+  }
+  
+  .box {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease;
+  }
+
+  .table-container {
+    transition: opacity 0.5s ease;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
